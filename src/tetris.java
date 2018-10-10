@@ -8,13 +8,9 @@ import javax.swing.JFrame;
 
 
 public class tetris {
-
  public static void main(String[] args){
-
   new gameMain();
-
  }
-
 }
 
 
@@ -26,17 +22,11 @@ class gameMain extends JFrame implements KeyListener{
  boolean up, down, left, right, rot, end=false;
 
  int[][] stopBox=new int[10][30];//0null 1red 2blue 3green 4yellow
-
  int[][] movingBox=new int[10][30];//0null 1red 2blue 3green 4yellow
-
  int[][] tempBox=new int[10][30];//0null 1red 2blue 3green 4yellow
 
  float sin=(float)Math.sin(Math.PI/2), cos=(float)Math.cos(Math.PI/2);
-
  Graphics bufferGraphics;
-
- 
-
  Image offscreen;
 
  int time=0;
